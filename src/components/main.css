@@ -1,0 +1,127 @@
+/* ///////////////////// Form /////////////////// */
+.main-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+.search{
+    padding: 3px;
+    background-color: tomato;
+    border: none;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+input[type = text]{
+    width: 20%;
+    height: 25px;
+    background-color: thistle;
+    border: none;
+    outline: none;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+.search:hover{
+    background-color: orangered;
+}
+.dropdown{
+    margin: 5px;
+    height: 25px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+    input[type = text]{
+        width: 60%;
+    }
+    .dropdown{
+        width: 15%;
+    }
+}
+/* ///////////////////// Form /////////////////// */
+
+/* ///////////////////// TodoList /////////////////// */
+.main-todo{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ///////////////////// TodoList /////////////////// */
+
+/* ///////////////////// Todo /////////////////// */
+.todo{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #3a0ca3;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s all;
+}
+.todo:hover{
+    transform: scale(1.1);
+}
+.todo-item{
+    list-style: none;
+    color: white;
+    font-family: 'Fuggles', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.todo-action{
+    display: flex;
+    justify-content: space-evenly;
+    width: 18%;
+}
+.todo-action button{
+    padding: 3px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.todo-button-check{
+    background-color: green;
+    color: white;
+    margin-right: 5px;
+}
+.todo-button-trash{
+    background-color: rgb(238, 61, 61);
+    color: white;
+}
+.todo-action button:hover{
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 1024px) {
+    .todo{
+        margin-top: 5%;
+        width: 160%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .todo{
+        margin-top: 5%;
+        width: 160%;
+    }
+    .todo li{
+        font-size: 1.5rem;
+    }
+}
+/* ///////////////////// TodoList /////////////////// */
